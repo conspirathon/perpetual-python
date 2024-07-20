@@ -14,6 +14,7 @@ dict_rivers["the danube"] = [
     "croatia",
 ]
 
+# Use a loop to print a sentence...
 for river, countries in dict_rivers.items():
     countries_str = ", ".join([country.title() for country in countries])
     print(f"\n{river.title()} river runs through {countries_str}.")
@@ -33,3 +34,12 @@ code below is not mine."""
 #         # Only one country, no need to add "and"
 #         countries_str = countries_list[0]
 #     print(f"\n{river.title()} river runs through {countries_str}")
+
+# # Use a loop to print the name of each river...
+# for key in dict_rivers:
+#     print(key.title())
+
+# # Use a loop to print the name of each country...
+# for river, countries in dict_rivers.items():
+#     countries_str = ", ".join([country.title() for country in countries])
+#     print(countries_str)
